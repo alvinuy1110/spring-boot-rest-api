@@ -1,0 +1,21 @@
+
+# Sample Web API
+
+## GET Customers
+
+curl -v http://localhost:8888/sample-api/api/v1/customers -X GET
+ 
+## GET Customer
+
+curl -v http://localhost:8888/sample-api/api/v1/customers/2 -X GET
+ 
+## POST Create  Customer
+
+curl -v -H "Content-Type:application/json" http://localhost:8888/sample-api/api/v1/customers -X POST -d "{\"firstName\":\"John11\", \"lastName\":\"Smith222\", \"sex\":\"M\",\"type\":\"G\"  }"
+
+
+# Actuator Endpoints
+
+## Get App Info
+
+curl -v http://localhost:8888/sample-api/info -X GET
